@@ -10,7 +10,7 @@ class DischargeInput(BaseModel):
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello World from discharge app"}
 
 @app.post("/simplify")
 async def simplify_text(payload: DischargeInput):
